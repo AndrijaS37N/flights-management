@@ -7,7 +7,8 @@
   <li>Has a custom algorithm that finds the quickest path in terms of flying.</li>
   <li>No kind of GUI was created for this project.</li>
 </ul>
-<h3>Project result example:</h3>
+
+#### Project result example:
 <p>Result Example</p>
 <img src="screen-shots/example-1.png" alt="Example 1">
 
