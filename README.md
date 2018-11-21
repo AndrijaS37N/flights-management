@@ -1,5 +1,5 @@
 # flights-management 🚦
-<h3>A second year university project. 🚥</h3>
+<h3>A second year university project.</h3>
 <ul>
   <li>Made for the <b>CS103 Algorithms & Data Structures</b> course. 🍏</li>
   <li>Second project of three made for that course.</li>
