@@ -9,7 +9,7 @@
 </ul>
 
 #### Project result example:
-<p>Result Example</p>
+<h6>Result Example</h6>
 <img src="screen-shots/example-1.png" alt="Example 1">
 
 
