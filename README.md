@@ -1,10 +1,9 @@
-# flights-management 🚦
+# flights-management 🛫
 <h3>A second year university project.</h3>
 <ul>
   <li>Made for the <b>CS103 Algorithms & Data Structures</b> course. 🍏</li>
-  <li>Second project of three made for that course.</li>
   <li>Usage of various data structures.</li>
-  <li>Has a custom algorithm that finds the quickest path in terms of flying.</li>
+  <li>Has an implementation of Dijkstra's algorithm for finding the shortest flight path and minimum time spent traveling.</li>
   <li>No kind of GUI was created for this project.</li>
 </ul>
 
