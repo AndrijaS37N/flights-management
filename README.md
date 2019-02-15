@@ -8,7 +8,7 @@
 * No kind of GUI was created for this project.
 #### Project result example:
 <h6>Result Example</h6>
-<img src="screen-shots/example-1.png" alt="Example 1">
+<img src="snapshots/example-1.png" alt="Example 1">
 
 
 
