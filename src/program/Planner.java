@@ -101,10 +101,10 @@ public class Planner {
         return path;
     }
 
-    public int getDistanceTo(String destinationLabel) {
-        return distances.get(destinationLabel);
-    }
+    // grab the queried destination distance
+    public int getDistanceTo(String destinationLabel) { return distances.get(destinationLabel); }
 
+    // grab the airport times
     public int airportTime() {
 
         int mct_time = 0;
