@@ -12,7 +12,6 @@ public class Flight {
     private int flightTime;
 
     public Flight(String id, Airport startDest, Airport endDest, Date takeOff, Date landingTime) {
-
         this.id = id;
         this.startDest = startDest;
         this.endDest = endDest;
@@ -22,18 +21,14 @@ public class Flight {
     }
 
     private int calculateFlightTime(Date d1, Date d2) {
-
         int diff = (int) d2.getTime() - (int) d1.getTime();
         int returnTime;
         returnTime = (int) TimeUnit.MILLISECONDS.toMinutes(diff);
-
         return returnTime;
     }
 
     public Airport getNeighbor(Airport current) {
-
         if (!(current.equals(startDest) || current.equals(endDest))) return null;
-
         return (current.equals(startDest)) ? endDest : startDest;
     }
 

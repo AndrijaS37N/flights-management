@@ -20,7 +20,6 @@ public class Planner {
     private LinkedList<Airport> path = new LinkedList<Airport>();
 
     public Planner(ItineraryElement graph, String initialAirportLabel) {
-
         this.graph = graph;
         Set<String> vertexKeys = this.graph.vertexKeys();
 
@@ -29,16 +28,13 @@ public class Planner {
         this.distances = new HashMap<String, Integer>();
 
         this.availableAirports = new PriorityQueue<Airport>(vertexKeys.size(), new Comparator<Airport>() {
-
             public int compare(Airport startDest, Airport endDest) {
-
                 return Planner.this.distances.get(endDest.getId());
             }
         });
 
         // for each Airport in the graph assume that it has a distance of infinity
         for (String key : vertexKeys) {
-
             followers.put(key, null);
             distances.put(key, Integer.MAX_VALUE);
         }
@@ -48,20 +44,17 @@ public class Planner {
         ArrayList<Flight> initialAirportNeighbors = initialAirport.getNeighborhood();
 
         for (Flight e : initialAirportNeighbors) {
-
             Airport other = e.getNeighbor(initialAirport);
             followers.put(other.getId(), initialAirportLabel);
             distances.put(other.getId(), e.getFlightTime());
             availableAirports.add(other);
         }
-
         processItineraryElement();
     }
 
     private void processItineraryElement() {
-
         while (availableAirports.size() > 0) {
-
+            // get the next airport
             Airport next = availableAirports.poll();
             int distanceToNext = distances.get(next.getId());
 
@@ -69,7 +62,6 @@ public class Planner {
             List<Flight> nextNeighbors = next.getNeighborhood();
 
             for (Flight e : nextNeighbors) {
-
                 Airport other = e.getNeighbor(next);
 
                 // we check if a shorter path exists and update to point to a new shortest found path in the graph
@@ -77,7 +69,6 @@ public class Planner {
                 int newWeight = distanceToNext + e.getFlightTime();
 
                 if (newWeight < currentWeight) {
-
                     followers.put(other.getId(), next.getId());
                     distances.put(other.getId(), newWeight);
                     availableAirports.remove(other);
@@ -88,27 +79,24 @@ public class Planner {
     }
 
     public List<Airport> getPathTo(String destinationLabel) {
-
         path.add(graph.getAirport(destinationLabel));
 
         while (!destinationLabel.equals(initialAirportLabel)) {
-
             Airport predecessor = graph.getAirport(followers.get(destinationLabel));
             destinationLabel = predecessor.getId();
             path.add(0, predecessor);
         }
-
         return path;
     }
 
     // grab the queried destination distance
-    public int getDistanceTo(String destinationLabel) { return distances.get(destinationLabel); }
+    public int getDistanceTo(String destinationLabel) {
+        return distances.get(destinationLabel);
+    }
 
     // grab the airport times
     public int airportTime() {
-
         int mct_time = 0;
-
         for (Airport a : path)
             mct_time = mct_time + a.getMinConnectionTime();
 
