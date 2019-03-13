@@ -14,7 +14,7 @@ public class Main {
         String airportId;
         int mct;
 
-        System.out.println("Testing with pre-made airports, dates and flights.");
+        System.out.println("Testing with pre-made airports, times and flights.");
 
         for (int i = 0; i < 10; i++) {
             airportId = "A-ID-" + String.valueOf(i);
