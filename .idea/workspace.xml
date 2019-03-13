@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d3ee24-ae69-44e1-9897-7e70da97c2c7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/flights-management/program/Airport.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/production/flights-management/program/Airport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/flights-management/program/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/production/flights-management/program/Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/flights-management/program/ItineraryElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/production/flights-management/program/ItineraryElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/flights-management/program/Planner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/production/flights-management/program/Planner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/program/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/program/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/program/ItineraryElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/program/ItineraryElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/program/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/program/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/program/Planner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/program/Planner.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,8 +41,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/program/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="285">
+              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -232,12 +224,12 @@
       <workItem from="1536093437183" duration="11134000" />
       <workItem from="1536137822678" duration="81000" />
       <workItem from="1536137935187" duration="389000" />
-      <workItem from="1552506324053" duration="719000" />
+      <workItem from="1552506324053" duration="770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12323000" />
+    <option name="totallyTimeSpent" value="12374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -252,9 +244,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5724138" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5724138" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32965517" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32714054" />
@@ -425,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/program/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="285">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
