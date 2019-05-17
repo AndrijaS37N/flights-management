@@ -19,7 +19,7 @@ public class ItineraryElement {
             Planner planner = new Planner(graph, graph.getAirport(startPos).getId());
             result = String.valueOf(planner.getPathTo(endPos)) + " ETA: " + String.valueOf(planner.getDistanceTo(endPos) + planner.airportTime()) + " min";
         } catch (Exception e) {
-            System.out.println("Woops! Something went wrong: " + e.toString());
+            System.out.println("Whoops! Something went wrong: " + e.toString());
         }
         return result;
     }

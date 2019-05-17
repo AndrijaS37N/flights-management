@@ -96,10 +96,10 @@ public class Planner {
 
     // grab the airport times
     public int airportTime() {
-        int mct_time = 0;
+        int mct = 0;
         for (Airport a : path)
-            mct_time = mct_time + a.getMinConnectionTime();
+            mct = mct + a.getMinConnectionTime();
 
-        return mct_time;
+        return mct;
     }
 }
