@@ -10,6 +10,8 @@
 #### Project result example:
 <h6>Result Example &#x2198;</h6>
 <img src="snapshots/example-1.png" alt="Example 1">
+<h6>Graph &#x2198;</h6>
+<img src="snapshots/graph-1.png" alt="Graph 1">
 
 
 
