@@ -28,7 +28,8 @@ public class Flight {
     }
 
     public Airport getNeighbor(Airport current) {
-        if (!(current.equals(startDest) || current.equals(endDest))) return null;
+        if (!(current.equals(startDest) || current.equals(endDest)))
+            return null;
         return (current.equals(startDest)) ? endDest : startDest;
     }
 

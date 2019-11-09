@@ -17,7 +17,7 @@ public class ItineraryElement {
         try {
             // send a copy of the graph again and the id of the starting position
             Planner planner = new Planner(graph, graph.getAirport(startPos).getId());
-            result = String.valueOf(planner.getPathTo(endPos)) + " ETA: " + String.valueOf(planner.getDistanceTo(endPos) + planner.airportTime()) + " min";
+            result = (planner.getPathTo(endPos)) + " ETA: " + (planner.getDistanceTo(endPos) + planner.airportTime()) + " min";
         } catch (Exception e) {
             System.out.println("Whoops! Something went wrong: " + e.toString());
         }

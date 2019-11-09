@@ -8,10 +8,9 @@ import java.util.Date;
 public class Main {
 
     // the network
-    private static ItineraryElement graph = new ItineraryElement();
-
+    public static ItineraryElement graph = new ItineraryElement();
     /*
-        Note ⚠️: No A* algorithm, only Dijkstra's because of lack of influencing heuristics
+        Note️: No A* algorithm, only Dijkstra's because of lack of influencing heuristics
         in the graph (mct variable is only added to the final ETA result).
     */
     public static void main(String[] args) {
@@ -22,7 +21,7 @@ public class Main {
 
         // make the airports
         for (int i = 0; i < 10; i++) {
-            airportId = "A-ID-" + String.valueOf(i);
+            airportId = "A-ID-" + i;
             mct = 20 + i;
             Airport a = new Airport(airportId, mct);
             graph.addAirport(a);
@@ -34,7 +33,7 @@ public class Main {
 
         DateFormat df = new SimpleDateFormat("dd.MM. | HH:mm");
 
-        // 1 hour = 60 minutes times difference
+        // 1 hour = 60 minutes time difference
         String takeOffTime = "01.01. | 10:00";
         String landingTime = "01.01. | 11:00";
 
@@ -47,13 +46,13 @@ public class Main {
 
         // make the flights and put them in the graph
         for (int i = 0; i < 5; i++) {
-            Flight f = new Flight(String.valueOf(i), graph.getVertices().get("A-ID-" + String.valueOf(i)), graph.getVertices().get("A-ID-" + String.valueOf(i + 1)), d1, d2);
+            Flight f = new Flight(String.valueOf(i), graph.getVertices().get("A-ID-" + i), graph.getVertices().get("A-ID-" + (i + 1)), d1, d2);
             graph.addFlight(f);
         }
 
         // get two airports from the graph
-        Airport a1 = graph.getVertices().get("A-ID-" + String.valueOf(0));
-        Airport a2 = graph.getVertices().get("A-ID-" + String.valueOf(3));
+        Airport a1 = graph.getVertices().get("A-ID-" + 0);
+        Airport a2 = graph.getVertices().get("A-ID-" + 3);
 
         // let's have a flight from airport 0 to airport 3
         Flight specialFlight = new Flight("5", a1, a2, d1, d2);
