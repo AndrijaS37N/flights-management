@@ -1,7 +1,7 @@
-# Flights Management 🛩
+# Flights Management
 <h3>A second year university project.</h3>
 
-<i>~ A newer version of this algorithmic task will be done.</i>
+<i>~ A newer version of this algorithmic task will be done.</i> 🛩
 
 * Made for the <b>CS103 Algorithms & Data Structures</b> course.
 * Has an implementation of Dijkstra's algorithm for finding the shortest flight path and minimum time spent traveling (but not waiting while connecting flights).
